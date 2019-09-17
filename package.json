@@ -1,0 +1,31 @@
+{
+  "name": "firebase-console-performance-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Measures page load latency of Firebase Console.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "format": "prettier --write 'src/**/*.ts'",
+    "lint": "tslint -c tslint.json --fix 'src/**/*.ts'",
+    "test": "yarn launch:trial",
+    "launch:trial": "ts-node src/launcher.ts --trial",
+    "launch": "ts-node src/launcher.ts"
+  },
+  "devDependencies": {
+    "@firebase/logger": "^0.1.22",
+    "@types/mysql": "^2.15.6",
+    "@types/node": "^12.7.1",
+    "@types/yargs": "^13.0.2",
+    "datalib": "1.9.2",
+    "js-string-escape": "1.0.1",
+    "mysql": "2.16.0",
+    "prettier": "^1.18.2",
+    "request": "2.88.0",
+    "ts-node": "8.3.0",
+    "tslib": "^1.9.3",
+    "tslint": "^5.13.1",
+    "typescript": "3.5.3",
+    "webpagetest": "0.3.9",
+    "yargs": "^13.3.0"
+  }
+}
